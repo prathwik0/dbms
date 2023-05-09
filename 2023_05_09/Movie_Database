@@ -73,12 +73,12 @@ INSERT INTO ACTOR (Act_id, Act_Name, Act_Gender) VALUES
 (15, 'Harry Dean Stanton', 'Male');
 -- Insert cast for Alien
 INSERT INTO MOVIE_CAST (Act_id, Mov_id, Role) VALUES
-(1, 1001, 'Ellen Ripley'),
-(2, 1001, 'Dallas'),
-(3, 1001, 'Kane'),
-(13, 1001, 'Parker'),
-(14, 1001, 'Lambert'),
-(15, 1001, 'Brett');
+(1, 4001, 'Ellen Ripley'),
+(2, 4001, 'Dallas'),
+(3, 4001, 'Kane'),
+(13, 4001, 'Parker'),
+(14, 4001, 'Lambert'),
+(15, 4001, 'Brett');
 
 -- Insert actors for Titanic
 INSERT INTO ACTOR (Act_id, Act_Name, Act_Gender) VALUES
@@ -95,7 +95,6 @@ INSERT INTO MOVIE_CAST (Act_id, Mov_id, Role) VALUES
 (4, 5002, 'Jack Dawson'),
 (5, 5002, 'Rose DeWitt Bukater'),
 (6, 5002, 'Cal Hockley'),
-(7, 5002, 'Ruth DeWitt Bukater'),
 (16, 5002, 'Ruth Dewitt Bukater, Old'),
 (17, 5002, 'Rose Dawson Calvert'),
 (18, 5002, 'Brock Lovett');
