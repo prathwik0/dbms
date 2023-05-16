@@ -1,38 +1,38 @@
-create table publisher (
-	name varchar(20),
-	address varchar(30),
-	phone int,
-	primary key(name)
+create table PUBLISHER (
+	Name varchar(20),
+	Address varchar(30),
+	Phone int,
+	primary key(Name)
 );
 
-create table book (
-	book_id varchar(20),
-	title varchar(20),
-	pub_name varchar(20),
-	pub_year int,
-	primary key(book_id),
-	foreign key(pub_name) references publisher(name) on delete cascade
+create table BOOK (
+	Book_id varchar(20),
+	Title varchar(20),
+	Publisher_Name varchar(20),
+	Pub_Year int,
+	primary key(Book_id),
+	foreign key(Publisher_Name) references PUBLISHER(Name) on delete cascade
 );
 
-create table book_authors(
-	book_id varchar(20),
-	author_name varchar(20),
-	primary key(book_id),
-	foreign key(book_id) references book(book_id) on delete cascade
+create table BOOK_AUTHORS(
+	Book_id varchar(20),
+	Author_Name varchar(20),
+	primary key(Book_id),
+	foreign key(Book_id) references BOOK(Book_id) on delete cascade
 );
 
-create table library_branch(
-	branch_id varchar(5),
-	branch_name varchar(10),
-	address varchar(15),
-	primary key(branch_id),
+create table LIBRARY_BRANCH(
+	Branch_id varchar(10),
+	Branch_name varchar(20),
+	Address varchar(30),
+	primary key(Branch_id),
 );
 
-create table book_copies(
-	book_id varchar(10)
-	branch_id varchar(10),
-	no_of_copies int,
-	primary key(book_id, branch_id),
-	foreign key(book_id) references book(book_id) on delete cascade,
-	foreign key(branch_id) references library_branch(branch_id) on delete cascade
+create table BOOK_COPIES(
+	Book_id varchar(20),
+	Branch_id varchar(10),
+	No_of_Copies int,
+	primary key(Book_id, Branch_id),
+	foreign key(Book_id) references BOOK(Book_id) on delete cascade,
+	foreign key(Branch_id) references LIBRARY_BRANCH(Branch_id) on delete cascade
 );
