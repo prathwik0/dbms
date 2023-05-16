@@ -1,0 +1,38 @@
+create table publisher (
+	name varchar(20),
+	address varchar(30),
+	phone int,
+	primary key(name)
+);
+
+create table book (
+	book_id varchar(20),
+	title varchar(20),
+	pub_name varchar(20),
+	pub_year int,
+	primary key(book_id),
+	foreign key(pub_name) references publisher(name) on delete cascade
+);
+
+create table book_authors(
+	book_id varchar(20),
+	author_name varchar(20),
+	primary key(book_id),
+	foreign key(book_id) references book(book_id) on delete cascade
+);
+
+create table library_branch(
+	branch_id varchar(5),
+	branch_name varchar(10),
+	address varchar(15),
+	primary key(branch_id),
+);
+
+create table book_copies(
+	book_id varchar(10)
+	branch_id varchar(10),
+	no_of_copies int,
+	primary key(book_id, branch_id),
+	foreign key(book_id) references book(book_id) on delete cascade,
+	foreign key(branch_id) references library_branch(branch_id) on delete cascade
+);
