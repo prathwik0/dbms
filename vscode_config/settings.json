@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Red",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "sqltools.format": {
+        "linesBetweenQueries": 2,
+        "reservedWordCase": "upper"
+    }
+}
