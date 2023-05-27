@@ -5,8 +5,8 @@ CREATE VIEW available_copies AS (
 		SUM(no_of_copies) - (
 			SELECT COUNT(card_no)
 			FROM book_lending
-			WHERE b.book_id = book_id
+			WHERE bc.book_id = book_id
 		) AS avail_copies
-	FROM book_copies b
+	FROM book_copies bc
 	GROUP BY book_id
 );
