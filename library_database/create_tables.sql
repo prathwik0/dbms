@@ -47,6 +47,6 @@ CREATE TABLE book_lending (
 	date_out date,
 	due_date date,
 	PRIMARY KEY (book_id, branch_id, card_no),
-	FOREIGN KEY (book_id) REFERENCES book(book_id),
+	FOREIGN KEY (book_id) REFERENCES book(book_id) ON DELETE CASCADE,
 	FOREIGN KEY (branch_id) REFERENCES library_branch(branch_id) ON DELETE CASCADE
 );
