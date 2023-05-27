@@ -1,6 +1,7 @@
 INSERT INTO publisher (name, address, phone)
 VALUES ('McGraw', 'Noida', 9089013432),
     ('Phi', 'Pune', 9945467800),
+    ('Sleeping Beauty', 'Nitte', 8027552624),
     ('Pearson', 'Nagpur', 7875622333);
 
 INSERT INTO library_branch (branch_id, branch_name, address)
@@ -21,6 +22,9 @@ INSERT INTO book_author (book_id, author_name)
 VALUES (111, 'Tripathy, Reddy'),
     (112, 'Larry Peterson'),
     (113, 'Ramez, Navathe'),
+    (113, 'Author 2'),
+    (113, 'Author 3'),
+    (113, 'Author 4'),
     (114, 'John e Hopcroft'),
     (115, 'Vasant Desai'),
     (116, 'Rajkamal'),
