@@ -1,4 +1,4 @@
-/* Create the tables of the library database */
+/* Create tables for movie database */
 USE movie_database;
 
 CREATE TABLE actor (
@@ -34,6 +34,6 @@ CREATE TABLE movie_cast (
 CREATE TABLE rating (
     rat_id INT PRIMARY KEY,
     mov_id INT,
-    rev_stars INT,
+    stars INT,
     FOREIGN KEY (mov_id) REFERENCES movie(mov_id) ON DELETE CASCADE
 );
