@@ -1,4 +1,11 @@
-/* Create tables for movie database */
+-- Schema for the movie database
+/*
+ actor(act_id, act_name, act_gender)
+ director(dir_id, dir_name, dir_phone)
+ movies(mov_id, mov_title, mov_year, mov_lang, dir_id)
+ movie_cast(act_id, mov_id, role)
+ rating(rat_id, mov_id, stars)
+ */
 USE movie_database;
 
 CREATE TABLE actor (
