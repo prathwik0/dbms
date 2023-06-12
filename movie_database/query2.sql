@@ -4,7 +4,7 @@ FROM movie m,
     movie_cast mc
 WHERE m.mov_id = mc.mov_id
     AND (
-        SELECT COUNT (mov_id)
+        SELECT COUNT(mov_id)
         FROM movie_cast
         WHERE act_id = mc.act_id
     ) >= 2;
