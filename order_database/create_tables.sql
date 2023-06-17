@@ -1,7 +1,7 @@
 -- Schema for order database
 /*
  * salesman(**salesman_id**, name, city, commission) 
- * customer(**customer_id**, cust_name, city, grade, salesman_id) 
+ * customer(**customer_id**, cust_name, city, grade) 
  * order(**ord_no**, puchase_amt, ord_date, customer_id, salesman_id)
  */
 USE order_database;
