@@ -5,7 +5,7 @@ VALUES (1000, "Benjen Stark", "Winterfell", 10),
     (1003, "Jaqen H'ghar", "Harrenhal", 10);
 
 INSERT INTO customer (customer_id, cust_name, city, grade)
-VALUES (500, "Eddard Stark", "Wintefell", 10),
+VALUES (500, "Eddard Stark", "Winterfell", 10),
     (501, "Catelyn Stark", "Winterfell", 6),
     (502, "Robb Stark", "Winterfell", 8),
     (503, "Jorah Mormont", "Bear Islands", 10),
