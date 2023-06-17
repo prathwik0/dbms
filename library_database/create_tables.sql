@@ -1,11 +1,11 @@
 -- Schema for the library database
 /*
- book(**book_id**, title, publisher_name, pub_year)
- book_authors(**book_id**, **author_name**)
- publisher(**name**, address, phone)
- book_copies(**book_id**, **branch_id**, no_of_copies)
- book_lending(**book_id**, **branch_id**, **card_no**, date_out, due_date)
- library_branch(**branch_id**, branch_name, address)
+ * book(**book_id**, title, publisher_name, pub_year)
+ * book_authors(**book_id**, **author_name**)
+ * publisher(**name**, address, phone)
+ * book_copies(**book_id**, **branch_id**, no_of_copies)
+ * book_lending(**book_id**, **branch_id**, **card_no**, date_out, due_date)
+ * library_branch(**branch_id**, branch_name, address)
  */
 USE library_database;
 
