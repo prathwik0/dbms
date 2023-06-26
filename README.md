@@ -2,7 +2,7 @@
 
 ## List of Databases
 
-1. ### Libary Database
+1. ### Library Database
 
     - [Create Tables](library_database/create_tables.sql)
     - [Insert Data](library_database/insert_data.sql)
@@ -36,4 +36,5 @@
     - [Query 3](order_database/query3.sql)
     - [Query 4](order_database/query4.sql)
     - [Query 5](order_database/query5.sql)
-
+    - [Bonus Query 1](order_database/extraQuery1.sql)
+    - [Bonus Query 2](order_database/extraQuery2.sql)
