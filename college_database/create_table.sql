@@ -10,7 +10,7 @@ CREATE TABLE student (
     usn varchar(10),
     sname varchar(20),
     address varchar(20),
-    phone int,
+    phone bigint,
     gender varchar(6),
     PRIMARY KEY(usn)
 );
